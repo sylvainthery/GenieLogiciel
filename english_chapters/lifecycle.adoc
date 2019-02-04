@@ -1,0 +1,151 @@
+
+:imagesdir: resources/lifecycle
+
+[[chapter_lifecycle]]
+== Phases of existence
+
+
+== Needs Analysis / Feasibility / Specification
+
+This phase makes it possible to collect the data necessary to give an account of the real situation.
+It is first necessary to understand the context, using all sources of information
+relevant. The main source of information is the customer, to whom any useful questions must be asked,
+by not hesitating to deepen: some vital elements are sometimes so obvious / implicit
+for the customer he does not think to mention them.
+Then, putting into perspective the needs expressed by the context allows to redefine or
+validate the real needs. These real needs should be ordered by degree of importance and
+can be grouped by themes.
+In this phase are also established the different design parameters, and in particular the
+constraints that may prevent some or all of the original objectives from being achieved. The
+technical or economic constraints are not the only ones to consider; some areas
+are also affected by legal, social, environmental, and so on.
+The analysis phase leads to the validation by the MOA of a realistic and
+suited to his real needs. This document clearly specifies the tasks to be performed as well as
+estimated time needed for each.
+This phase also allows the MOE to assess that it has access to all skills
+necessary for the project, or if the use of external resources is necessary.
+Preliminary study
+Upstream of the need analysis phase, an even earlier phase of study can be found
+prior. While the need analysis is intended to be precise and exhaustive, the preliminary study aims to
+simply to make a first round and to set the perimeter.
+The pre-study phase is not intended to be exhaustive, but to guide the following phases (including
+including detailed needs analysis).
+Example of analysis tools
+Five Ws
+4 questions: Who? What? Or ? When?
+Completed by 3 modalities: How? How many ? Why ?
+An English equivalent is the Five W's: Who, What, Where, When, Why? Used by journalists
+for writing their articles.
+Method of 5 Why
+Ask five questions successively starting with Why can we better understand the
+the real cause of a problem.
+Pareto Diagram
+Such a diagram represents in graphic form the different causes of a problem,
+ordered by their importance.
+It is an application of the 80/20 law (or Pareto principle): 20% of causes produce 80%
+
+
+
+Diagram of Ishikawa
+Also called 5M or fish bones, this diagram makes it possible to relate the causes and
+the effects.
+Materials in play
+Hardware: equipment, machinery, software, technologies
+Operating method, logic
+Human labor
+Environment: environment, context
+
+
+
+
+Specification
+In the specification phase, the need that was analyzed earlier is described with more
+in the form of requirements that the solution must satisfy.
+A specification document can be of two main types:
+A functional specification describes the business processes in which the solution
+intervenes. For example, the units used, the rules of calculation or interaction, etc. The
+Functional specification represents the goal to be achieved.
+A technical specification describes the technical environment in which the solution fits.
+For example, architectural design, exchange data format with components
+already present, the programming languages ​​used, the format of the databases, the
+host system, ... can be fixed in this document. The technical specification represents
+the means to achieve the goal set by the functional part.
+This phase often leads to more than one specification document. In particular,
+requirements can be refined more and more during this phase until reaching a
+satisfactory level of detail: then general and then more detailed specifications can be created.
+Most often, it is the MOA that is at the origin of the general specifications. It can however
+be relevant that the detailed specifications are rather written by the MOE.
+Because it tells future users and developers what the finished product will look like, the
+specification allows for cost and duration estimates. It serves as a basis for
+establish the project schedule.
+The specification also serves as a contractual basis. After this phase, all the features that
+are out-specification do not have to be neither requested nor paid by the customer.
+Design
+While the specification phase is intended to describe the solution from the outside, the
+design describes it from the inside. While the specification phase describes the constraints, the
+design brings solutions.
+This is the work of the MOE.
+Like all documentation, it can be refined more and more, for example in a document
+preliminary / architectural design, then detailed.
+Implementation / Development
+This phase consists of the realization of the solution as it was conceived.
+tests
+Testing the software as implemented is intended to improve the quality or knowledge of the
+degree of presence of a particular quality.
+A test consists of the partial verification of the software. It corresponds to the combination of three
+things:
+input data
+an object to test
+an expected situation
+If the expected situation corresponds to the situation observed during the test, it is a sign of the quality
+of the software.
+
+
+Integration
+During the integration phase, each module of the software is integrated and tested as a whole.
+Also called functional tests, this phase aims to verify the functional aspect (including
+performance, stability, etc.), sometimes not detectable by lower level tests.
+Validation
+During the validation phase, the system is tested as a whole, and in an environment
+getting closer to the final environment. The purpose is to assess its conformity with the
+specified requirements.
+A particular type of validation is the recipe. It takes place in the presence of all the actors
+(MOA and MOE). It often precedes an important milestone in the life of the project, such as a delivery.
+Deployment
+The deployment of a software consists in its putting into production, ie to make it available
+and usable for the customer as well as for its end users.
+This phase can be broken down into several steps that will apply (or not) to a project
+particular.
+Delivery (release, packaging)
+The different components of the solution are prepared to make them usable.
+Activation (install, activation)
+The solution is made usable in its production environment. His different
+components are installed and configured.
+Disabling (uninstall, deactivation)
+A previous solution may have to be totally or partially uninstalled or
+disabled to allow the new solution to replace it.
+Update (update)
+The new solution may require a newer version of dependencies already present
+in its production environment. It can also be part of a larger system, which
+must then be updated to enable the activation of the solution.
+The deployment of the same solution can be done several times. This phase makes
+essential the use of a version manager as well as a manager of
+configuration.
+Operation / Maintenance
+Software may have to evolve even after being delivered in the course of
+maintenance.
+Maintenance can be of several types:
+Corrective maintenance consists of resolving an anomaly
+corrective maintenance
+It corrects the anomaly permanently.
+palatial maintenance
+It prevents the anomaly from damaging the system on the client environment, while
+allowing the software to continue to fulfill all or part of its features.
+However, since its impact is necessarily negative to a certain degree, this type
+maintenance is often of a temporary nature.
+Preventive maintenance consists of intervening on a software before an anomaly
+occurs. This type of maintenance can be systematic or conditional.
+Scalable maintenance can better meet the need or respond to new ones
+needs by modifying existing software or developing new features.
+The maintenance differs from the other phases in that the software in question is already in
+production.

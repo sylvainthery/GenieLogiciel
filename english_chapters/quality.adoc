@@ -1,0 +1,304 @@
+:imagesdir: resources/quality
+
+[[chapter_quality]]
+
+== Quality of software
+When we talk about the quality of software, we are talking about several different *characteristics*
+They can be subdivided into sub-characteristics (or attributes).
+
+All features of a software do not necessarily have the same importance for a
+given organization. This is why each organization defines its own quality model,
+sometimes with several models applicable to its various software products. In particular,
+each organization defines its own methods (metrics) to assess *the degree of presence* 
+of the quality attributes.
+The main standards used for the definition of quality models are : ISO / IEC 9126
+(old version) and ISO / IEC 25010 (new version).
+https://iso25000.com/index.php/en/iso-25000-standards/iso-25010
+
+In these standards, the term _software_ is used in a broad sense. It can refer to both the code
+source, executables, libraries, architecture documents, and so on.
+In consequence, the concept of _user_ may also apply, depending on the characteristic and / or
+considered software, to a client or a developer.
+
+=== Characteristics
+* Functional suitability +
+ Does the software meet the functional needs expressed?
+** Suitability / Functional Appropriateness +
+   Are all the features present adequate?
+** Accuracy / Functional Correctness +
+   Are the results or effects provided correct?
+** Functional completeness +
+   Are the results or effects provided sufficient?
+** Functionality compliance +
+   Does the software comply with the standards and regulations in effect?
+
+* Reliability +
+  Does the software maintain its level of service under specific conditions and during a definite period?
+** Maturity +
+   Is the occurrence frequency of the incidents low?
+** Fault Tolerance +
+   Does the appearance of an incident degrade the behavior of the software?
+** Ease of recovery (Recoverability) +
+   What is the software's ability to return to a full operational state after a breakdown ?
+** Availability +
+   Are the software features available permanently?
+** Reliability compliance +
+   Does the software comply with the standards and regulations in effect?
+
+[[quality_usability]]
+* Ergonomics / Usability +
+  Effectiveness, efficiency and satisfaction with which specified users perform objectives specified in a particular environment.
+** Understandability / appropriateness recognizability +
+   Is it (intuitively) easy for a user to understand and remember howto perform an operation?
+** Learnability +
+   Is it easy to train future users to use the software?
+** Operability +
+   Is it easy for the user to accomplish his task?
+** User error protection +
+   How does the software react if its user has unexpected behavior?
+** Accessibility +
+   Can the software be used by people with disabilities?
+** Attractiveness / user interface aesthetics +
+   Does the user want to use the interface?
+** Usability compliance +
+	Does the software comply with the standards and regulations in effect?
+
+* Performance (Efficiency) +
+   Does the software require a cost-effective and proportional sizing of the platform accommodation compared to other requirements?
+** Time Behavior +
+   Does the software's response time vary according to its usage?
+** Resource utilization +
+  Are the resources (memory, processor, ...) correctly used by the software?
+** Capacity +
+   Are the resources provided by the software at the right time and in adequate quantity?
+** Efficiency compliance +
+   Does the software comply with the standards and regulations in force?
+
+* Maintainability +
+  Does evolving the software is easy in case of anomaly or new needs?
+** Analyzability +
+   Is it easy to identify software deficiencies or their causes?
+** Modifiability +
+   What is the effort needed to remedy these deficiencies?
+** Testability +
+   What is the effort needed to validate the behavior of the software?
+** Modularity (modularity)
+   Does modifying a component of the software have little impact on the other components?
+** Reusability +
+   Is it easy to combine existing components to get a new feature?
+** Maintainability compliance +
+   Does the software comply with the standards and regulations in effect?
+
+* Portability +
+  Can the software be transferred from one platform or environment to another?
+** Adaptability +
+   Is it easy to adapt the software to operational environment changes?
+** Easy Installability +
+   Is it easy to install the software in a planned environment?
+** Replaceability +
+   Is it easy to use this software in place of another in the same environment?
+** Portability compliance +
+   Does the software comply with the standards and regulations in effect?
+
+* Compatibility +
+  Does the software work well with others?
+** Co-existence +
+   Does the operation of the software alters or is corrupted by another? 
+** Interoperability +
+Can the software communicate with others?
+
+* Security 
+  Can the software be trusted?
+** Confidentiality
+   Is the data only available to those who are authorized?
+** Integrity
+   Are the data guaranteed against unauthorized modification?
+** Non-repudiation +
+  Can the software prove that every action has taken place?
+** Accountability +
+  Can the software link each action to its author?
+** Authenticity +
+  Can the software prevent an identity from being misused?
+
+=== Over-quality
+Sometimes it's called "over-quality" to realize a feature while it's not specified.
+
+
+The usual interpretation is then:
+* Producing a requested functionality is normal: this is what software quality is.
+* Not producing a feature while it is requested degrades the quality of the software.
+* Not producing a feature that is not requested is normal.
+* But to realize a functionality whereas this one is not requested is a loss or a
+  loss of profit for the supplier, since the customer will not pay to obtain
+  something he did not ask!
+
+Although quite defensible, this way of summarizing the "over-quality" is limiting. It is
+possible to interpret the situation in a more nuanced way, by asking the question:
+is the feature considered useful or unnecessary for the customer? This question expresses
+perfectly the difference between the need as expressed by the customer and the real need of the customer
+(see the need analysis phase).
+
+We then have the following interpretation:
+
+* Producing a requested functionality is normal if it is useful.
+* Producing a requested but useless functionality can mean a lack in the phase need analysis.
+* Do not produce a feature while it is requested is a fault of the provider.
+** However, if the unrealized feature proves useless for the customer, it will not be
+   maybe not embarrassed by his absence.
+** Not producing a feature that is not requested is normal.
+** But if the unrealized feature would have been ultimately helpful to the customer?
+   This is a opportunity for product improvement ...
+* To realize a functionality whereas this one is not requested is:
+** a loss for the provider, effectively, if the feature in question is useless.
+** a way to meet the needs of the customer, and therefore a proof of the quality of the
+   service provided by the supplier, which proves that he has better understood the real need of the
+  client than the client himself.
+
+With this alternative view, "over-quality" can become a commercial asset.
+
+===================================================================================================
+
+Phases of existence
+Needs Analysis / Feasibility / Terms of Reference
+This phase makes it possible to collect the data necessary to give an account of the real situation.
+It is first necessary to understand the context, using all sources of information
+relevant. The main source of information is the customer, to whom any useful questions must be asked,
+by not hesitating to deepen: some vital elements are sometimes so obvious / implicit
+for the customer he does not think to mention them.
+Then, putting into perspective the needs expressed by the context allows to redefine or
+validate the real needs. These real needs should be ordered by degree of importance and
+can be grouped by themes.
+In this phase are also established the different design parameters, and in particular the
+constraints that may prevent some or all of the original objectives from being achieved. The
+technical or economic constraints are not the only ones to consider; some areas
+are also affected by legal, social, environmental, and so on.
+The analysis phase leads to the validation by the MOA of a realistic and
+suited to his real needs. This document clearly specifies the tasks to be performed as well as
+estimated time needed for each.
+This phase also allows the MOE to assess that it has access to all skills
+necessary for the project, or if the use of external resources is necessary.
+Preliminary study
+Upstream of the need analysis phase, an even earlier phase of study can be found
+prior. While the need analysis is intended to be precise and exhaustive, the preliminary study aims to
+simply to make a first round and to set the perimeter.
+The pre-study phase is not intended to be exhaustive, but to guide the following phases (including
+including detailed needs analysis).
+Example of analysis tools
+Five Ws
+4 questions: Who? What? Or ? When?
+Completed by 3 modalities: How? How many ? Why ?
+An English equivalent is the Five W's: Who, What, Where, When, Why? Used by journalists
+for writing their articles.
+Method of 5 Why
+Ask five questions successively starting with Why can we better understand the
+the real cause of a problem.
+Pareto Diagram
+Such a diagram represents in graphic form the different causes of a problem,
+ordered by their importance.
+It is an application of the 80/20 law (or Pareto principle): 20% of causes produce 80%
+
+
+
+Diagram of Ishikawa
+Also called 5M or fish bones, this diagram makes it possible to relate the causes and
+the effects.
+Materials in play
+Hardware: equipment, machinery, software, technologies
+Operating method, logic
+Human labor
+Environment: environment, context
+
+
+
+
+Specification
+In the specification phase, the need that was analyzed earlier is described with more
+in the form of requirements that the solution must satisfy.
+A specification document can be of two main types:
+A functional specification describes the business processes in which the solution
+intervenes. For example, the units used, the rules of calculation or interaction, etc. The
+Functional specification represents the goal to be achieved.
+A technical specification describes the technical environment in which the solution fits.
+For example, architectural design, exchange data format with components
+already present, the programming languages ​​used, the format of the databases, the
+host system, ... can be fixed in this document. The technical specification represents
+the means to achieve the goal set by the functional part.
+This phase often leads to more than one specification document. In particular,
+requirements can be refined more and more during this phase until reaching a
+satisfactory level of detail: then general and then more detailed specifications can be created.
+Most often, it is the MOA that is at the origin of the general specifications. It can however
+be relevant that the detailed specifications are rather written by the MOE.
+Because it tells future users and developers what the finished product will look like, the
+specification allows for cost and duration estimates. It serves as a basis for
+establish the project schedule.
+The specification also serves as a contractual basis. After this phase, all the features that
+are out-specification do not have to be neither requested nor paid by the customer.
+Design
+While the specification phase is intended to describe the solution from the outside, the
+design describes it from the inside. While the specification phase describes the constraints, the
+design brings solutions.
+This is the work of the MOE.
+Like all documentation, it can be refined more and more, for example in a document
+preliminary / architectural design, then detailed.
+Implementation / Development
+This phase consists of the realization of the solution as it was conceived.
+tests
+Testing the software as implemented is intended to improve the quality or knowledge of the
+degree of presence of a particular quality.
+A test consists of the partial verification of the software. It corresponds to the combination of three
+things:
+input data
+an object to test
+an expected situation
+If the expected situation corresponds to the situation observed during the test, it is a sign of the quality
+of the software.
+
+
+Integration
+During the integration phase, each module of the software is integrated and tested as a whole.
+Also called functional tests, this phase aims to verify the functional aspect (including
+performance, stability, etc.), sometimes not detectable by lower level tests.
+Validation
+During the validation phase, the system is tested as a whole, and in an environment
+getting closer to the final environment. The purpose is to assess its conformity with the
+specified requirements.
+A particular type of validation is the recipe. It takes place in the presence of all the actors
+(MOA and MOE). It often precedes an important milestone in the life of the project, such as a delivery.
+Deployment
+The deployment of a software consists in its putting into production, ie to make it available
+and usable for the customer as well as for its end users.
+This phase can be broken down into several steps that will apply (or not) to a project
+particular.
+Delivery (release, packaging)
+The different components of the solution are prepared to make them usable.
+Activation (install, activation)
+The solution is made usable in its production environment. His different
+components are installed and configured.
+Disabling (uninstall, deactivation)
+A previous solution may have to be totally or partially uninstalled or
+disabled to allow the new solution to replace it.
+Update (update)
+The new solution may require a newer version of dependencies already present
+in its production environment. It can also be part of a larger system, which
+must then be updated to enable the activation of the solution.
+The deployment of the same solution can be done several times. This phase makes
+essential the use of a version manager as well as a manager of
+configuration.
+Operation / Maintenance
+Software may have to evolve even after being delivered in the course of
+maintenance.
+Maintenance can be of several types:
+Corrective maintenance consists of resolving an anomaly
+corrective maintenance
+It corrects the anomaly permanently.
+palatial maintenance
+It prevents the anomaly from damaging the system on the client environment, while
+allowing the software to continue to fulfill all or part of its features.
+However, since its impact is necessarily negative to a certain degree, this type
+maintenance is often of a temporary nature.
+Preventive maintenance consists of intervening on a software before an anomaly
+occurs. This type of maintenance can be systematic or conditional.
+Scalable maintenance can better meet the need or respond to new ones
+needs by modifying existing software or developing new features.
+The maintenance differs from the other phases in that the software in question is already in
+production.
